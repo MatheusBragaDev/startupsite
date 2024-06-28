@@ -16,14 +16,22 @@ const navItems = [
 
 function DrawerAppBar() {
   return (
-      <AppBar component="nav">
+      <AppBar component="nav" sx={{ backgroundColor: '#3a0101', boxShadow: 1 }}>
         <Toolbar>
           <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            Vulcan Harbour Venture Logo
+            <Link 
+              href="/teste"
+              passHref 
+              style={{ 
+              color: 'inherit', 
+              textDecoration: 'inherit',
+                      }}>
+              Vulcan Harbour Venture Logo
+            </Link>
           </Typography>
           <Box 
           sx={{ display: { xs: 'none', sm: 'block' } }}

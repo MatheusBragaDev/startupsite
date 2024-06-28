@@ -14,7 +14,7 @@ export default function Home() {
     <main className={styles.main}>
       <DrawerAppBar/>
       <Container maxWidth="md">
-       <BackgroundImage/>
+       {/* <BackgroundImage/> */}
         <Box className={styles.box} sx={{justifyContent:'center'}}> 
           <Typography className={styles.center} component="h1" variant="h3">
             We acquire, operate and grow the legacy of privately held companies in the Triangle region of North Carolina “Maybe put a quote that one of you like as a way to show visitors who you are”

@@ -21,7 +21,7 @@ export default function Team() {
             </Box>
 
         <Container maxWidth="sm" sx={{pt:7, pb:5}}>
-            <Typography component="h1" variant="h2" align="center">
+            <Typography color="black" component="h1" variant="h2" align="center">
                 Meet the team
             </Typography>
         </Container>
@@ -49,7 +49,7 @@ export default function Team() {
 
           <Grid item xs={12} sm={6} md={6}>
           <Card
-              image = {"https://source.unsplash.com/random?a=2"}
+              image = {"/DavidPortrait.jpg"}
               title = {"David"}
               subtitle = "David´s Role"
               actions = {

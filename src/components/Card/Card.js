@@ -13,11 +13,11 @@ export default function Card({
     image, title, subtitle, actions
   }){
     return(
-        <CardMUI sx={{bgcolor: themeDefault.palette.background.default}}>
+        <CardMUI sx={{bgcolor: themeDefault.palette.background.paper}}>
               <CardMedia
                 image = {image}
                 title = {title} 
-                sx={{pt:'80%'}}
+                sx={{pt:'100%'}}
               />
               <CardContent sx={{ textAlign: 'center' }}>
                 <Typography variant="h5" component="h2" align="center">

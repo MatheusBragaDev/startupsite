@@ -1,6 +1,6 @@
 import TemplateDefault from '@/templates/Default';
 import { Box, Container} from '@mui/system';
-import { Card, Grid, Typography } from '@mui/material';
+import { Card, Grid, List, ListItem, ListItemText, Typography } from '@mui/material';
 import BackgroundImage from "@/components/BackgroundImage";
 import styles from "@/app/page.module.css";
 
@@ -11,9 +11,12 @@ export default function Teste() {
             <Box  sx={{ width: '100vw', margin: 0,position: 'relative' }}>
                 <BackgroundImage/>
                 <Container maxWidth="lg">
-                    <Box className={styles.box} sx={{px:8, py:15, justifyContent:'center'}}>                    
-                        <Typography className={styles.center} component="h1" variant="h2" align='center'>
-                            We acquire, operate and grow the legacy of privately held companies in the Triangle region of North Carolina “Maybe put a quote that one of you like as a way to show visitors who you are”
+                    <Box sx={{px:8, py:10, justifyContent:'center'}}>                    
+                        <Typography  component="h1" variant="h2" align='center' sx={{py:5}}>
+                            We acquire, operate and grow the legacy of privately held companies in the Triangle region of North Carolina
+                        </Typography>
+                        <Typography  component="h4" variant="h4" align='center'>
+                             “Maybe put a quote that one of you like as a way to show visitors who you are”
                         </Typography>
                     </Box>
                 </Container>
@@ -36,26 +39,30 @@ export default function Teste() {
                             </Card>
                         </Grid>
                         <Grid item xs={12} sm={6} md={4}>
-                            <Box>
+                            <Box sx={{textAlign:'center', mb:4}}>
                                 <Typography component="h1" variant="h2" align='center'>
                                     Who we are
                                 </Typography>
-                                <Typography>
-                                    We are passionate entrepreneurs with diverse professional experiences and a wide range of skills, committed to continuing your legacy by:
-                                </Typography>
-                                <Typography>
-                                    Using a hands-on approach to learn your business
-                                </Typography>
-                                <Typography>
-                                    Empowering your team to meet new challenges and growth opportunities
-                                </Typography>
-                                <Typography>
-                                    Xxxxx
-                                </Typography>
-                                <Typography>
-                                    Our goal is to honor the foundation you´ve built while guiding your business to     future success.
-                                </Typography>
                             </Box>
+                            <List component="ul">
+
+                                <ListItem component="li">
+                                    <ListItemText primary = "We are passionate entrepreneurs with diverse professional experiences and a wide range of skills, committed to continuing your legacy by:"/>
+                                </ListItem>
+                                <ListItem component="li" sx={{ml:4}}>
+                                    <ListItemText primary = "•Using a hands-on approach to learn your business"/>
+                                </ListItem>
+                                <ListItem component="li" sx={{ml:4}}>
+                                <ListItemText primary = "•Empowering your team to meet new challenges and growth opportunities"/>
+                                </ListItem>
+                                <ListItem component="li"sx={{ml:4}}>
+                                <ListItemText primary = "•Xxxxx"/>
+                                </ListItem>
+                                <ListItem component="li"sx={{ml:4}}>
+                                <ListItemText primary = "•Our goal is to honor the foundation you´ve built while guiding your business to     future success."/>
+                                </ListItem>
+                            
+                            </List>
                         </Grid>
                     
                     </Grid>
