@@ -11,12 +11,15 @@ import Link from 'next/link';
   export default function Footer () {
 
     return (
+       <Box sx={{bgcolor:'#d3d3d3'}}>
+
+       
       <Container 
         maxWidth="lg" 
         component="footer" 
         sx={{
             pt:3,
-            pb:3,        
+            pb:3, 
         }}
         >
         <Grid container spacing={3} >
@@ -28,9 +31,10 @@ import Link from 'next/link';
                         style={{ 
                         color: 'inherit', 
                         textDecoration: 'inherit',
+                        color:'#000',
                         }}
                     >
-                        <Typography  variant="subtitle1">Home</Typography> 
+                        <Typography variant="subtitle1">Home</Typography> 
                     </Link> 
                 </Box>
             </Grid>
@@ -42,6 +46,7 @@ import Link from 'next/link';
                         style={{ 
                         color: 'inherit', 
                         textDecoration: 'inherit',
+                        color:'#000',
                         }}
                     >
                         <Typography  variant="subtitle1">Our Team</Typography> 
@@ -56,6 +61,7 @@ import Link from 'next/link';
                         style={{ 
                         color: 'inherit', 
                         textDecoration: 'inherit',
+                        color:'#000',
                         }}
                     >
                         <Typography  variant="subtitle1">Contact Us</Typography> 
@@ -70,6 +76,7 @@ import Link from 'next/link';
                         style={{ 
                         color: 'inherit', 
                         textDecoration: 'inherit',
+                        color:'#000',
                         }}
                     >
                         <Typography  variant="subtitle1">Investments</Typography> 
@@ -77,12 +84,13 @@ import Link from 'next/link';
                 </Box>
             </Grid>
         </Grid>
-        <Box textAlign="center" sx={{mt:4}}>
+        <Box textAlign="center" sx={{mt:4,  color:'#000'}}>
             <Typography  variant="subtitle1">
                 © 2024 Vulcan Harbour Venture - All rights reserved
             </Typography>
         </Box>
       </Container>
+      </Box> 
     );
   };
   

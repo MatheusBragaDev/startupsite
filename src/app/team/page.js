@@ -13,7 +13,7 @@ export default function Team() {
                 <BackgroundImage/>
                 <Container maxWidth="lg">
                     <Box className={styles.box} sx={{px:8, py:15, justifyContent:'center'}}>                    
-                        <Typography className={styles.center} component="h1" variant="h2" align='center'>
+                      <Typography  component="h1" variant="h2" align='center' sx={{ color:'#8B0000'}}>
                             VULCAN HARBOUR VENTURE TEAM
                         </Typography>
                     </Box>

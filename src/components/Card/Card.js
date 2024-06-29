@@ -13,7 +13,7 @@ export default function Card({
     image, title, subtitle, actions
   }){
     return(
-        <CardMUI sx={{bgcolor: themeDefault.palette.background.paper}}>
+        <CardMUI sx={{bgcolor: themeDefault.palette.background.paper, mb:5}}>
               <CardMedia
                 image = {image}
                 title = {title} 
