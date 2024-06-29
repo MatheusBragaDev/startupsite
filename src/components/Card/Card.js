@@ -23,6 +23,7 @@ export default function Card({
                 <Typography variant="h5" component="h2" align="center">
                   {title}
                 </Typography>
+                <br></br>
                 <Typography align="center">
                   {subtitle}
                 </Typography>

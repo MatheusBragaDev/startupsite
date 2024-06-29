@@ -10,8 +10,8 @@ import Link from 'next/link';
 const navItems = [
   { label: 'Home', href: '/teste' },
   { label: 'Team', href: '/team' },
-  { label: 'Portfolio', href: '/portfolio' },
-  { label: 'Contact Us', href: '/contact' },
+  // { label: 'Portfolio', href: '/portfolio' },
+  { label: 'Contact Us', href: '/contactus' },
 ];
 
 function DrawerAppBar() {

@@ -3,7 +3,8 @@ import { Box, Container,} from '@mui/system';
 import { Grid, Typography, Button} from '@mui/material';
 import BackgroundImage from "@/components/BackgroundImage";
 import styles from "@/app/page.module.css";
-import Card from '@/components/Card/Card'
+import Card from '@/components/Card/Card';
+import Link from 'next/link';
 
 export default function Team() {
     return(
@@ -14,17 +15,20 @@ export default function Team() {
                 <Container maxWidth="lg">
                     <Box className={styles.box} sx={{px:8, py:15, justifyContent:'center'}}>                    
                         <Typography className={styles.center} component="h1" variant="h2" align='center'>
-                            VULCAN HARBOUR VENTURE TEAM
+                            CONTACT US
                         </Typography>
                     </Box>
                 </Container>
             </Box>
 
-        <Container maxWidth="sm" sx={{pt:7, pb:5}}>
-            <Typography color="black" component="h1" variant="h2" align="center">
-                Meet the team
-            </Typography>
-        </Container>
+            <Box sx={{py:5}}>
+
+                <Typography color="black" component="h6" variant="h6" align='center'>
+                    Contact us to learn more about Vulcan Harbour Venture, or confidentially discuss specific opportunities of investment or acquisition.
+                </Typography>
+            
+            </Box>
+
       
       <Container maxWidth="lg">
         <Grid container spacing={1}>
@@ -36,11 +40,14 @@ export default function Team() {
               subtitle = "Dustin´s Role"
               actions = {
                 <>
+                  <Typography variant="body1">
+                    Email: <Link href="mailto:dustincodercamp@gmail.com">dustincodercamp@gmail.com</Link>
+                 </Typography>
+                 <Typography variant="body1">
+                    LinkedIn: <Link href="https://www.linkedin.com/in/dustincotcamp/" target="_blank">linkedin/Dustin</Link>
+                </Typography>
                   <Button size="small" color="primary">
-                    Dustin´s Bio Link
-                  </Button> 
-                  <Button size="small" color="primary">
-                    {/* Remover */}
+                    Book a meeting (Calendar)
                   </Button>
                 </> 
               }
@@ -54,11 +61,14 @@ export default function Team() {
               subtitle = "David´s Role"
               actions = {
                 <>
+                  <Typography variant="body1">
+                    Email: <Link href="mailto:david.berko@duke.edu">david.berko@duke.edu</Link>
+                 </Typography>
+                 <Typography variant="body1">
+                    LinkedIn: <Link href="https://www.linkedin.com/in/david-berko/" target="_blank">linkedin/David</Link>
+                </Typography>
                   <Button size="small" color="primary">
-                    David´s Bio Link
-                  </Button> 
-                  <Button size="small" color="primary">
-                    {/* Remover */}
+                    Book a meeting (Calendar)
                   </Button>
                 </> 
               }
