@@ -6,11 +6,13 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Link from 'next/link';
+import Image from 'next/image';
+import { IconButton } from '@mui/material';
 
 const navItems = [
-  { label: 'Home', href: '/teste' },
+  { label: 'Home', href: '/' },
   { label: 'Team', href: '/team' },
-  // { label: 'Portfolio', href: '/portfolio' },
+  // { label: 'investments', href: '/portfolio' },-
   { label: 'Contact Us', href: '/contactus' },
 ];
 
@@ -24,13 +26,19 @@ function DrawerAppBar() {
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
             <Link 
-              href="/teste"
+              href="/"
               passHref 
-              style={{ 
-              color: 'inherit', 
-              textDecoration: 'inherit',
-                      }}>
-              Vulcan Harbour Venture Logo
+            >
+              <IconButton sx={{py:'20px'}} disableRipple>
+                
+                <Image
+                  src="/logo.png" // Substitua pelo caminho real da sua imagem
+                  alt="Vulcan Harbour Venture Logo"
+                  width={450} // Ajuste o tamanho conforme necessário
+                  height={150}
+                />
+
+              </IconButton>
             </Link>
           </Typography>
           <Box 

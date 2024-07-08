@@ -10,7 +10,7 @@ export default function Team() {
     return(
         <TemplateDefault>
             
-            <Box  sx={{ width: '100vw', margin: 0,position: 'relative' }}>
+            <Box  sx={{ width: '100vw', mt: 23, position: 'relative' }}>
                 <BackgroundImage/>
                 <Container maxWidth="lg">
                     <Box className={styles.box} sx={{px:8, py:15, justifyContent:'center'}}>                    
@@ -31,7 +31,7 @@ export default function Team() {
 
       
       <Container maxWidth="lg">
-        <Grid container spacing={1}>
+        <Grid container spacing={1} justifyContent="center"> 
 
           <Grid item xs={12} sm={6} md={6}>
             <Card
@@ -54,26 +54,6 @@ export default function Team() {
             />
           </Grid>
 
-          <Grid item xs={12} sm={6} md={6}>
-          <Card
-              image = {"/DavidPortrait.jpg"}
-              title = {"David"}
-              subtitle = "David´s Role"
-              actions = {
-                <>
-                  <Typography variant="body1">
-                    Email: <Link href="mailto:david.berko@duke.edu">david.berko@duke.edu</Link>
-                 </Typography>
-                 <Typography variant="body1">
-                    LinkedIn: <Link href="https://www.linkedin.com/in/david-berko/" target="_blank">linkedin/David</Link>
-                </Typography>
-                  <Button size="small" color="primary">
-                    Book a meeting (Calendar)
-                  </Button>
-                </> 
-              }
-            />
-          </Grid>
           
         </Grid>
       </Container>
