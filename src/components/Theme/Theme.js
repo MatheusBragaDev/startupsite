@@ -1,8 +1,13 @@
 
-import {createTheme } from "@mui/system";
+import {createTheme} from "@mui/material/styles";
 
 
 const themeDefault = createTheme ({
+    typography:{
+        fontFamily: 'Montserrat, Arial, sans-serif',
+        fontSize: 20,
+    },
+
     palette:{
         primary:{
             main: '#000000',

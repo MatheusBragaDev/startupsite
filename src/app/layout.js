@@ -1,17 +1,29 @@
-import { Inter } from "next/font/google";
+'use client'
+
+import { ThemeProvider } from "@mui/system";
+import themeDefault from "@/components/Theme/Theme";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import Head from "next/head";
 
-export const metadata = {
-  title: "Vulcan Harbour Venture",
-  description: "Startup Site",
-};
+
+
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <>
+      <Head>
+        <title>Vulcan Harbour Venture</title>
+      </Head>
+      <html lang="en">
+        <body>
+          
+          <ThemeProvider theme={themeDefault}>
+              {children}
+            </ThemeProvider>
+        </body>
+      </html>
+      </>
+
   );
 }

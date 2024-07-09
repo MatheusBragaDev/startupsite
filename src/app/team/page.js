@@ -4,16 +4,41 @@ import { Grid, Typography, Button} from '@mui/material';
 import BackgroundImage from "@/components/BackgroundImage";
 import styles from "@/app/page.module.css";
 import Card from '@/components/Card/Card'
+import Image from 'next/image'
+import Link from 'next/link';
 
 export default function Team() {
     return(
         <TemplateDefault>
             
-            <Box  sx={{ width: '100vw', mt: 23 ,position: 'relative' }}>
-                <BackgroundImage/>
+            <Box  sx={{ width: '100vw', mt: 16 ,position: 'relative' }}>
+                
+            <Box
+              sx={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  zIndex: -1,
+                  overflow: 'hidden',
+                  opacity: 0.75,
+                }}>
+                <Image
+                  alt="backgroundimage"
+                  src="/team.jfif"
+                  quality={100}
+                  fill
+                  sizes="100vhw"
+                  style={{
+                    objectFit: 'cover',
+                  }}
+                />
+              </Box>
+
                 <Container maxWidth="lg">
-                    <Box className={styles.box} sx={{px:8, py:15, justifyContent:'center'}}>                    
-                      <Typography  component="h1" variant="h2" align='center' sx={{ color:'#8B0000'}}>
+                    <Box sx={{px:8, py:15, justifyContent:'center'}}>                    
+                      <Typography  component="h1" variant="h4" align='center' color='#000' sx={{fontWeight:'bold'}}>
                             VULCAN HARBOUR VENTURE TEAM
                         </Typography>
                     </Box>
@@ -21,7 +46,7 @@ export default function Team() {
             </Box>
 
         <Container maxWidth="sm" sx={{pt:7, pb:5}}>
-            <Typography color="black" component="h1" variant="h2" align="center">
+            <Typography color="black" component="h1" variant="h4" align="center">
                 Meet the team
             </Typography>
         </Container>
@@ -36,9 +61,14 @@ export default function Team() {
               subtitle = "Dustin´s Role"
               actions = {
                 <>
+                  <Link 
+                  href="/team/dustinsbio"
+                  passHref >
                   <Button size="small" color="primary">
                     Dustin´s Bio Link
                   </Button> 
+                  </Link>
+                 
                   <Button size="small" color="primary">
                     {/* Remover */}
                   </Button>

@@ -18,7 +18,7 @@ const navItems = [
 
 function DrawerAppBar() {
   return (
-      <AppBar component="nav" sx={{ backgroundColor: '#3a0101', boxShadow: 1 }}>
+      <AppBar component="nav" sx={{ backgroundColor: '#fff', boxShadow: 1 }}>
         <Toolbar>
           <Typography
             variant="h6"
@@ -34,8 +34,8 @@ function DrawerAppBar() {
                 <Image
                   src="/logo.png" // Substitua pelo caminho real da sua imagem
                   alt="Vulcan Harbour Venture Logo"
-                  width={450} // Ajuste o tamanho conforme necessário
-                  height={150}
+                  width={300} // Ajuste o tamanho conforme necessário
+                  height={100}
                 />
 
               </IconButton>
@@ -46,7 +46,7 @@ function DrawerAppBar() {
           >
             {navItems.map((item) => (
               <Link key={item.label} href={item.href} passHref>
-                <Button  sx={{ color: '#fff' }}>
+                <Button  sx={{ color: '#000' }}>
                   {item.label}
                 </Button>
               </Link>
