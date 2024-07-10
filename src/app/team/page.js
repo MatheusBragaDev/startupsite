@@ -11,7 +11,7 @@ export default function Team() {
     return(
         <TemplateDefault>
             
-            <Box  sx={{ width: '100vw', mt: 16 ,position: 'relative' }}>
+            <Box  sx={{ width: '100vw', mt: 8 ,position: 'relative' }}>
                 
             <Box
               sx={{
@@ -38,7 +38,15 @@ export default function Team() {
 
                 <Container maxWidth="lg">
                     <Box sx={{px:8, py:15, justifyContent:'center'}}>                    
-                      <Typography  component="h1" variant="h4" align='center' color='#000' sx={{fontWeight:'bold'}}>
+                      <Typography  component="h1" variant="h4" align='center' color='#000' 
+                        sx={{  
+                          py: { xs: 2, sm: 5 }, 
+                          fontSize: { xs: '1.5rem', sm: '2.125rem' },
+                          fontFamily: 'var(--font-montserrat)',
+                          position: 'relative',
+                          fontWeight: 'bold',
+                        }}
+                      >
                             VULCAN HARBOUR VENTURE TEAM
                         </Typography>
                     </Box>
@@ -46,7 +54,13 @@ export default function Team() {
             </Box>
 
         <Container maxWidth="sm" sx={{pt:7, pb:5}}>
-            <Typography color="black" component="h1" variant="h4" align="center">
+            <Typography color="black" component="h1" variant="h4" align="center"
+             sx={{  
+              py: { xs: 1, sm: 1 }, 
+              fontSize: { xs: '1.5rem', sm: '2.125rem' },
+              fontFamily: 'var(--font-montserrat)',
+              position: 'relative',
+            }}>
                 Meet the team
             </Typography>
         </Container>

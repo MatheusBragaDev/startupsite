@@ -10,7 +10,7 @@ export default function Team() {
     return(
         <TemplateDefault>
             
-            <Box  sx={{ width: '100vw', mt:16, position: 'relative' }}>
+            <Box  sx={{ width: '100vw', mt:8, position: 'relative' }}>
                 
                 
             <Box
@@ -40,7 +40,15 @@ export default function Team() {
                 
                 <Container maxWidth="lg">
                     <Box className={styles.box} sx={{px:8, py:15, justifyContent:'center'}}>                    
-                        <Typography  component="h1" variant="h4" align='center' color='#000'sx={{fontWeight:'bold'}}>
+                        <Typography  component="h1" variant="h4" align='center' color='#000'
+                          sx={{  
+                            py: { xs: 2, sm: 5 }, 
+                            fontSize: { xs: '1.5rem', sm: '2.125rem' },
+                            fontFamily: 'var(--font-montserrat)',
+                            position: 'relative',
+                            fontWeight: 'bold',
+                          }}
+                        >
                             CONTACT US
                         </Typography>
                     </Box>
@@ -49,7 +57,14 @@ export default function Team() {
 
             <Box sx={{py:5}}>
 
-                <Typography color="black" component="h6" variant="h6" align='center'>
+                <Typography color="black" component="h6" variant="h6" align='center'
+                  sx={{  
+                    py: { xs: 2, sm: 5 }, 
+                    fontSize: { xs: '1rem', sm: '2.125rem' },
+                    fontFamily: 'var(--font-montserrat)',
+                    position: 'relative',
+                  }}
+                >
                     Contact us to learn more about Vulcan Harbour Venture, or confidentially discuss specific opportunities of investment or acquisition.
                 </Typography>
             
