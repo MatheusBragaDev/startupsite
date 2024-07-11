@@ -1,20 +1,16 @@
-'use client'
-
 import { ThemeProvider } from "@mui/system";
 import themeDefault from "@/components/Theme/Theme";
 import "./globals.css";
 
-import Head from "next/head";
 
-
+export const metadata = {
+  title: "Vulcan Harbour Venture",
+  description: "Startup Site",
+}
 
 
 export default function RootLayout({ children }) {
   return (
-      <>
-      <Head>
-        <title>Vulcan Harbour Venture</title>
-      </Head>
       <html lang="en">
         <body>
           <ThemeProvider theme={themeDefault}>
@@ -22,7 +18,5 @@ export default function RootLayout({ children }) {
           </ThemeProvider>
         </body>
       </html>
-      </>
-
   );
 }

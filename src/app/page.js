@@ -26,7 +26,7 @@ export default function Home() {
                     <Box sx={{px:{xs: 2, sm:8}, py:{xs:5, sm: 10}, justifyContent:'center', textAlign:'center'}}>         
                         <Typography  
                             component="h1" 
-                            variant="h4" 
+                            variant="h1" 
                             align='center' 
                             sx={{  
                                 py: { xs: 2, sm: 5 }, 
@@ -39,7 +39,7 @@ export default function Home() {
                         </Typography>
 
                         <Typography  
-                            component="h6" 
+                            component="h2" 
                             variant="h6" 
                             align='center' 
                             sx={{
@@ -105,7 +105,7 @@ export default function Home() {
                                     sx={{
                                         textAlign:"center",
                                         fontFamily: 'var(--font-montserrat)',
-                                        fontSize: { xs: '1.5rem', sm: '2.125rem' },
+                                        fontSize: { xs: '1.5rem', sm: '2.125rem'},
                                         color:"#333",
                                         mb:1,
                                         
@@ -123,21 +123,21 @@ export default function Home() {
                                     width: '100%', 
                                   }}
                                 >   
-                                <Typography variant='body1'>
+                                <Typography variant='h6'>
                                     We are dedicated entrepreneurs with a diverse background of professional experiences and a wide range of skills. Our commitment is to carry forward your legacy by:
                                 </Typography>
 
                                 <Typography component="ul" sx={{ pl: 2}}>
-                                    <Typography component="li">
+                                    <Typography component="li" variant='h6' variant='h6'>
                                         Ensuring a fair and mutually advantageous transaction
                                     </Typography>
-                                    <Typography component="li">
+                                    <Typography component="li" variant='h6'>
                                         Taking a hands-on approach to immerse ourselves in your business
                                     </Typography>
-                                    <Typography component="li">
+                                    <Typography component="li" variant='h6'>
                                         Empowering your team to embrace new challenges and growth opportunities
                                     </Typography>
-                                    <Typography component="li">
+                                    <Typography component="li" variant='h6'>
                                         Our mission is to respect the strong foundation you've established and steer your business towards future achievements
                                     </Typography>
                                 </Typography> 
@@ -199,21 +199,21 @@ export default function Home() {
                                     width: '100%', 
                                   }}
                                 >
-                                <Typography variant='body1'>
+                                <Typography variant='h6'>
                                     Business owners that:
                                 </Typography>
 
                                 <Typography component="ul" sx={{ pl: 2}}>
-                                    <Typography component="li">
+                                    <Typography component="li" variant='h6'>
                                      Desire a successful continuity of their business
                                     </Typography>
-                                    <Typography component="li">
+                                    <Typography component="li" variant='h6'>
                                     Prioritize a smooth and transparent transition of ownership
                                     </Typography>
-                                    <Typography component="li">
+                                    <Typography component="li" variant='h6'>
                                     Want employees, customers, and suppliers well taken care of in the future
                                     </Typography>
-                                    <Typography component="li">
+                                    <Typography component="li" variant='h6'>
                                     Understand the purchase price isn't the only factor to be considered during the  transaction
                                     </Typography>
                                 </Typography>
@@ -299,25 +299,25 @@ export default function Home() {
                                     }}
                                 >
                                     <Typography 
-                                        variant='body1'
+                                        variant='h6'
                                     >
                                         We are looking for business that:
                                     </Typography>
 
                                     <Typography component="ul" sx={{ pl: 2}}>
-                                        <Typography component="li">
+                                        <Typography component="li" variant='h6'>
                                         Are located in the Triangle region of North Carolina
                                         </Typography>
-                                        <Typography component="li">
+                                        <Typography component="li" variant='h6'>
                                         Operates in markets with long-term viability and growth opportunities
                                         </Typography>
-                                        <Typography component="li">
+                                        <Typography component="li" variant='h6'>
                                         Have management in place
                                         </Typography>
-                                        <Typography component="li">
+                                        <Typography component="li" variant='h6'>
                                         Have revenue between $3M to $15M
                                         </Typography>
-                                        <Typography component="li">
+                                        <Typography component="li" variant='h6'>
                                         Have EBITDA greater than $500K
                                         </Typography>
                                     </Typography>
