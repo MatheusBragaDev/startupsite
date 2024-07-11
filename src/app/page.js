@@ -128,7 +128,7 @@ export default function Home() {
                                 </Typography>
 
                                 <Typography component="ul" sx={{ pl: 2}}>
-                                    <Typography component="li" variant='h6' variant='h6'>
+                                    <Typography component="li" variant='h6'>
                                         Ensuring a fair and mutually advantageous transaction
                                     </Typography>
                                     <Typography component="li" variant='h6'>
