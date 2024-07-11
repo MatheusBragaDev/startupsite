@@ -17,10 +17,9 @@ export default function RootLayout({ children }) {
       </Head>
       <html lang="en">
         <body>
-          
           <ThemeProvider theme={themeDefault}>
               {children}
-            </ThemeProvider>
+          </ThemeProvider>
         </body>
       </html>
       </>

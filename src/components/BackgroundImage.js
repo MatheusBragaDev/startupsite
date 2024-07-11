@@ -1,11 +1,10 @@
-import Image from 'next/image'
 import backgroundimage from '../../public/backgroundimage.jpg'
 import { Box } from '@mui/system'
  
 export default function BackgroundImage() {
   return (
     <Box
-    sx={{
+      sx={{
         position: 'absolute',
         top: 0,
         left: 0,
@@ -14,18 +13,11 @@ export default function BackgroundImage() {
         zIndex: -1,
         overflow: 'hidden',
         opacity: 0.7,
-      }}>
-      <Image
-        alt="backgroundimage"
-        src={backgroundimage}
-        placeholder="blur"
-        quality={100}
-        fill
-        sizes="100vhw"
-        style={{
-          objectFit: 'cover',
-        }}
-      />
-    </Box>
-  )
+        backgroundImage: `url(${backgroundimage.src})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    />
+  );
 }

@@ -11,85 +11,88 @@ import Link from 'next/link';
   export default function Footer () {
 
     return (
-       <Box sx={{bgcolor:'#d3d3d3'}}>
+       <Box sx={{bgcolor:'#d3d3d3', py:2}}>
 
             <Container 
                 maxWidth="lg" 
                 component="footer" 
                 sx={{
-                    pt:3,
-                    pb:3, 
+                    textAlign:'center', 
                 }}
                 >
-                <Grid container spacing={3} justifyContent="center">
-                    <Grid item xs={6} sm={3}>
-                        <Box textAlign="center">
+                <Grid container spacing={1} justifyContent="center">
+                    <Grid item xs={4} sm={3}>
+                        <Box sx={{my:1}}>
                             <Link 
                                 href="/"
                                 passHref 
-                                style={{ 
-                                color: 'inherit', 
-                                textDecoration: 'inherit',
-                                color:'#000',
-                                }}
                             >
-                                <Typography variant="subtitle1">Home</Typography> 
+                                <Typography 
+                                    variant="body2" 
+                                    sx={{
+                                        color:'#000', 
+                                        textDecoration:'none',
+                                        fontSize: { xs: '0.75rem', sm: '1rem' },
+                                        }}
+                                >
+                                    Home
+                                </Typography> 
                             </Link> 
                         </Box>
                     </Grid>
-                    <Grid item xs={6} sm={3}>
-                        <Box textAlign="center">
+
+                    <Grid item xs={4} sm={3}>
+                        <Box sx={{my:1}}>
                             <Link 
                                 href="/team"
                                 passHref 
-                                style={{ 
-                                color: 'inherit', 
-                                textDecoration: 'inherit',
-                                color:'#000',
-                                }}
                             >
-                                <Typography  variant="subtitle1">Our Team</Typography> 
-                            </Link>
+                                <Typography 
+                                    variant="body2" 
+                                    sx={{
+                                        color:'#000', 
+                                        textDecoration:'none',
+                                        fontSize: { xs: '0.75rem', sm: '1rem' }
+                                        }}
+                                >
+                                    Our team
+                                </Typography> 
+                            </Link> 
                         </Box>
                     </Grid>
-                    <Grid item xs={6} sm={3}>
-                        <Box textAlign="center">
+
+                    <Grid item xs={4} sm={3}>
+                        <Box sx={{my:1}}>
                             <Link 
                                 href="/contactus"
                                 passHref 
-                                style={{ 
-                                color: 'inherit', 
-                                textDecoration: 'inherit',
-                                color:'#000',
-                                }}
                             >
-                                <Typography  variant="subtitle1">Contact Us</Typography> 
-                            </Link>
+                                <Typography 
+                                    variant="body2" 
+                                    sx={{
+                                        color:'#000', 
+                                        textDecoration:'none',
+                                        fontSize: { xs: '0.75rem', sm: '1rem' }
+                                        }}
+                                >
+                                    Contact Us
+                                </Typography> 
+                            </Link> 
                         </Box>
                     </Grid>
-                    {/* <Grid item xs={6} sm={3}>
-                        <Box textAlign="center">
-                            <Link 
-                                href="#"
-                                passHref 
-                                style={{ 
-                                color: 'inherit', 
-                                textDecoration: 'inherit',
-                                color:'#000',
-                                }}
-                            >
-                                <Typography  variant="subtitle1">Investments</Typography> 
-                            </Link>
-                        </Box>
-                    </Grid> */}
                 </Grid>
-                <Box textAlign="center" sx={{mt:4,  color:'#000'}}>
-                    <Typography  variant="subtitle1">
+
+                <Box sx={{mt:2,  color:'#000'}}>
+                    <Typography  
+                        variant="body2"
+                        sx={{ 
+                            fontSize: { xs: '0.75rem', sm: '1rem' }
+                        }}
+                    >
                         © 2024 Vulcan Harbour Venture - All rights reserved
                     </Typography>
                 </Box>
             </Container>
-
        </Box> 
     );
   };
