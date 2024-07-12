@@ -42,26 +42,48 @@ function DrawerAppBar() {
 
       <AppBar component="nav" sx={{ backgroundColor: '#fff', boxShadow: 1 }}>
         <Toolbar sx={{display:'flex', justifyContent:'space-between'}}>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { sm: 'block' } }}
-          >
-
+          <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Link 
               href="/"
               passHref 
-            >
+              >
               <IconButton disableRipple>    
                 <Image
                   src="/logo1.png"
                   alt="Vulcan Harbour Venture Logo"
                   width={100} 
                   height={50}
-                />
+                  />
               </IconButton>
             </Link>
-          </Typography>
+
+            <Link 
+              href="/"
+              passHref 
+              >
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{ color:'rgb(184 56 47)',ml: 2, display: { xs: 'none', sm: 'block' }, fontFamily: 'var(--font-montserrat)', fontWeight: 'bold',    fontSize: { xs: '1rem', sm: '1.5rem', md: '1.75rem', lg: '2rem' } }}
+              >
+              Vulcan Harbour Venture
+            </Typography>
+            <Typography
+              variant="body1"
+              component="div"
+              sx={{
+                color:'rgb(184 56 47)',
+                ml: 2,
+                display: { xs: 'block', sm: 'none' },
+                fontFamily: 'var(--font-montserrat)',
+                fontWeight: 'bold',
+                fontSize: { xs: '1rem', sm: '1.5rem' },
+              }}
+            >
+              Vulcan Harbour
+            </Typography>
+            </Link>
+              </Box>
           <Box 
           sx={{ display: { xs: 'none', sm: 'block' } }}
           >
