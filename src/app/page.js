@@ -28,7 +28,7 @@ export default function Home() {
                         sx={{
                             width:'100%',
                             px: { xs: 2, sm: 8 }, 
-                            py: { xs: 5, sm: 12 },
+                            py: { xs: 5, sm: 6 },
                             display:'flex' , 
                             flexDirection:'column',
                             justifyContent: 'space-between', 
@@ -65,8 +65,6 @@ export default function Home() {
                             align='center'
                             sx={{
                                 color: '#F5F5F5',
-                                mt:{xs:0,sm:2},
-                                pb: { xs: 0, sm: 0.5 },
                                 fontSize: { xs: '1rem', sm: '1.2rem' },
                                 fontFamily: 'var(--font-montserrat)',
                                 position: 'relative',

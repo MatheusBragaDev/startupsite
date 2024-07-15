@@ -22,7 +22,7 @@ export default function Team() {
                   height: '100%',
                   zIndex: -1,
                   overflow: 'hidden',
-                  opacity: 0.75,
+                  opacity: 1,
                 }}>
                 <Image
                   alt="backgroundimage"
