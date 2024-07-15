@@ -40,7 +40,7 @@ export default function Home() {
                             variant="h1"
                             align='center'
                             sx={{
-                                mt: { xs: 2, sm: 4 },
+                                mt: { xs: 0.5, sm: 0.2 },
                                 fontSize: { xs: '1.5rem', sm: '2.125rem' },
                                 fontFamily: 'var(--font-montserrat)',
                                 fontWeight: 'bold'
@@ -65,7 +65,8 @@ export default function Home() {
                             align='center'
                             sx={{
                                 color: '#F5F5F5',
-                                pb: { xs: 1, sm: 1 },
+                                mt:{xs:0,sm:2},
+                                pb: { xs: 0, sm: 0.5 },
                                 fontSize: { xs: '1rem', sm: '1.2rem' },
                                 fontFamily: 'var(--font-montserrat)',
                                 position: 'relative',
