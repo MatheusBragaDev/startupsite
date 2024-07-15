@@ -23,19 +23,38 @@ function DrawerAppBar() {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <List>
         {navItems.map((item) => (
           <Link key={item.label} href={item.href} passHref>
-            <ListItem ButtonBase>
-              <ListItemText primary={item.label} />
+            <ListItem ButtonBase sx={{ justifyContent: 'center' }}>
+              {item.label === 'Contact Us' ? (
+                <Button
+                  variant="contained"
+                  color="primary"
+                  sx={{
+                    backgroundColor: 'rgb(184 56 47)',
+                    color: '#fff',
+                    '&:hover': {
+                      backgroundColor: 'rgb(150 45 36)',
+                    },
+                  }}
+                >
+                  {item.label}
+                </Button>
+              ) : (
+                <ListItemText primary={item.label} sx={{justifyContent: 'center',
+                  position: 'relative', textAlign:'center'}}/>
+              )}
             </ListItem>
           </Link>
         ))}
       </List>
     </Box>
   );
+
 
   return (
     <Box sx={{display:'flex'}}>
@@ -87,13 +106,29 @@ function DrawerAppBar() {
           <Box 
           sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            {navItems.map((item) => (
-              <Link key={item.label} href={item.href} passHref>
-                <Button  sx={{ color: '#000' }}>
-                  {item.label}
-                </Button>
-              </Link>
-            ))}
+             {navItems.map((item) =>
+              item.label === 'Contact Us' ? (
+                <Link key={item.label} href={item.href} passHref>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    sx={{
+                      backgroundColor: 'rgb(184 56 47)',
+                      color: '#fff',
+                      '&:hover': {
+                        backgroundColor: 'rgb(150 45 36)',
+                      },
+                    }}
+                  >
+                    {item.label}
+                  </Button>
+                </Link>
+              ) : (
+                <Link key={item.label} href={item.href} passHref>
+                  <Button sx={{ color: '#000' }}>{item.label}</Button>
+                </Link>
+              )
+            )}
           </Box>
           <IconButton
             color="inherit"
