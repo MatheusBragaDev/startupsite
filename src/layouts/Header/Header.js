@@ -50,7 +50,7 @@ function DrawerAppBar() {
               <IconButton disableRipple>    
                 <Image
                   src="/logo1.png"
-                  alt="Vulcan Harbour Venture Logo"
+                  alt="Vulcan Harbor Venture Logo"
                   width={100} 
                   height={50}
                   />
@@ -66,7 +66,7 @@ function DrawerAppBar() {
               component="div"
               sx={{ color:'rgb(184 56 47)',ml: 2, display: { xs: 'none', sm: 'block' }, fontFamily: 'var(--font-montserrat)', fontWeight: 'bold',    fontSize: { xs: '1rem', sm: '1.5rem', md: '1.75rem', lg: '2rem' } }}
               >
-              Vulcan Harbour Venture
+              Vulcan Harbor Venture
             </Typography>
             <Typography
               variant="body1"
@@ -77,10 +77,10 @@ function DrawerAppBar() {
                 display: { xs: 'block', sm: 'none' },
                 fontFamily: 'var(--font-montserrat)',
                 fontWeight: 'bold',
-                fontSize: { xs: '1rem', sm: '1.5rem' },
+                fontSize: { xs: '0.95rem', sm: '1.5rem' },
               }}
             >
-              Vulcan Harbour
+              Vulcan Harbor Venture
             </Typography>
             </Link>
               </Box>

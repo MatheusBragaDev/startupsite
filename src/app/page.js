@@ -17,36 +17,55 @@ export default function Home() {
                     mt: 8,
                     position: 'relative',
                     overflow: 'hidden',
+                    flexDirection:'column',
                     alignItems: 'center',
-                    justifyContent: 'center',
+                    justifyContent: 'space-between',
                 }}
             >
                 <BackgroundImage />
-                <Container maxWidth="lg">
-                    <Box sx={{ px: { xs: 2, sm: 8 }, py: { xs: 5, sm: 12 }, justifyContent: 'center', textAlign: 'center' }}>
+                <Container maxWidth="lg" sx={{position:'relative', height:'100%'}}>
+                    <Box 
+                        sx={{
+                            width:'100%',
+                            px: { xs: 2, sm: 8 }, 
+                            py: { xs: 5, sm: 12 },
+                            display:'flex' , 
+                            flexDirection:'column',
+                            justifyContent: 'space-between', 
+                            height:'80%',
+                        }}
+                    >
                         <Typography
                             component="h1"
                             variant="h1"
                             align='center'
                             sx={{
-                                py: { xs: 2, sm: 5 },
+                                mt: { xs: 2, sm: 4 },
                                 fontSize: { xs: '1.5rem', sm: '2.125rem' },
                                 fontFamily: 'var(--font-montserrat)',
-                                fontWeight: 'bold',
+                                fontWeight: 'bold'
                             }}
                         >
                             We acquire, operate and grow the legacy of privately held companies in the Triangle region of North Carolina
                         </Typography>
                     </Box>
 
-                    <Box sx={{ px: { xs: 2, sm: 8 }, py: { xs: 5, sm: 10 }, justifyContent: 'center', textAlign: 'center' }}>            
+                    <Box 
+                        sx={{ 
+                            width: '100%',
+                            px: { xs: 2, sm: 8 },
+                            pb: { xs: 5, sm: 10 },
+                            textAlign: 'center',
+                            mt: 'auto',
+                        }}
+                    >            
                         <Typography
                             component="h2"
                             variant="h6"
                             align='center'
                             sx={{
-                                color: '#000',
-                                pb: { xs: 2, sm: 0.25 },
+                                color: '#F5F5F5',
+                                pb: { xs: 1, sm: 1 },
                                 fontSize: { xs: '1rem', sm: '1.2rem' },
                                 fontFamily: 'var(--font-montserrat)',
                                 position: 'relative',
@@ -59,12 +78,11 @@ export default function Home() {
 
                         <Typography
                             variant="h6"
+                            align='center'
                             sx={{
-                                color: '#000',
-                                pb: { xs: 2, sm: 0.25 },
+                                color: '#F5F5F5',
                                 fontSize: { xs: '1rem', sm: '1.2rem' },
                                 fontFamily: 'var(--font-montserrat)',
-                                position: 'relative',
                                 fontWeight: 'bold',
                                 fontStyle: 'italic',
                             }}>

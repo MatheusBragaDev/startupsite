@@ -12,7 +12,7 @@ export default function BackgroundImage() {
         height: '100%',
         zIndex: -1,
         overflow: 'hidden',
-        opacity: 0.45,
+        opacity: 1,
         backgroundImage: `url(${backgroundimage.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
