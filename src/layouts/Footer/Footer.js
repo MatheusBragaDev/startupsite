@@ -89,7 +89,7 @@ import Link from 'next/link';
                             fontSize: { xs: '0.75rem', sm: '1rem' }
                         }}
                     >
-                        © 2024 Vulcan Harbour Venture - All rights reserved
+                        © 2024 Vulcan Harbor Venture - All rights reserved
                     </Typography>
                 </Box>
             </Container>
