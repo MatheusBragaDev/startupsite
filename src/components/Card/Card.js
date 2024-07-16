@@ -13,13 +13,31 @@ export default function Card({
     image, title, subtitle, actions
   }){
     return(
-        <CardMUI sx={{bgcolor: themeDefault.palette.background.paper, mb:5}}>
+        <CardMUI 
+          sx={{
+            bgcolor: themeDefault.palette.background.paper, 
+            display: 'flex',
+            flexDirection: 'column',
+            height: 'auto',
+            width: 'auto',
+          }}
+        >
               <CardMedia
-                image = {image}
-                title = {title} 
-                sx={{pt:'100%'}}
+                  component="img"
+                  image={image}
+                  title={title}
+                  sx={{
+                    height: 'auto',
+                    width: 'auto',
+                    objectFit: 'cover',
+                  }}
               />
-              <CardContent sx={{ textAlign: 'center' }}>
+              <CardContent 
+                sx={{ 
+                  textAlign: 'center',
+                  flexGrow:1,
+                }}
+              >
                 <Typography variant="h5" component="h2" align="center">
                   {title}
                 </Typography>

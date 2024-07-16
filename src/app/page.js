@@ -17,22 +17,22 @@ export default function Home() {
                     mt: 8,
                     position: 'relative',
                     overflow: 'hidden',
-                    flexDirection:'column',
+                    flexDirection: 'column',
                     alignItems: 'center',
                     justifyContent: 'space-between',
                 }}
             >
                 <BackgroundImage />
-                <Container maxWidth="lg" sx={{position:'relative', height:'100%'}}>
-                    <Box 
+                <Container maxWidth="lg" sx={{ position: 'relative', height: '100%' }}>
+                    <Box
                         sx={{
-                            width:'100%',
-                            px: { xs: 2, sm: 8 }, 
+                            width: '100%',
+                            px: { xs: 2, sm: 8 },
                             py: { xs: 5, sm: 6 },
-                            display:'flex' , 
-                            flexDirection:'column',
-                            justifyContent: 'space-between', 
-                            height:'80%',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'space-between',
+                            height: '80%',
                         }}
                     >
                         <Typography
@@ -50,15 +50,15 @@ export default function Home() {
                         </Typography>
                     </Box>
 
-                    <Box 
-                        sx={{ 
+                    <Box
+                        sx={{
                             width: '100%',
                             px: { xs: 2, sm: 8 },
                             pb: { xs: 5, sm: 10 },
                             textAlign: 'center',
                             mt: 'auto',
                         }}
-                    >            
+                    >
                         <Typography
                             component="h2"
                             variant="h6"
@@ -87,7 +87,7 @@ export default function Home() {
                             }}>
                             Andrew Carnegie
                         </Typography>
-                        
+
                     </Box>
                 </Container>
             </Box>
@@ -142,7 +142,7 @@ export default function Home() {
                                         fontFamily: 'var(--font-montserrat)',
                                         fontSize: { xs: '1.5rem', sm: '2.125rem' },
                                         color: "#333",
-                                        mb: {xs:1, sm:2},
+                                        mb: { xs: 1, sm: 2 },
 
                                     }}
                                 >
@@ -158,8 +158,8 @@ export default function Home() {
                                         width: '100%',
                                     }}
                                 >
-                                    <Typography 
-                                        variant='subtitle1'   
+                                    <Typography
+                                        variant='subtitle1'
                                         sx={{
                                             textAlign: 'justify',
                                             fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.12rem' },
@@ -168,17 +168,17 @@ export default function Home() {
                                         We are dedicated entrepreneurs with a diverse background of professional experiences and a wide range of skills. Our commitment is to carry forward your legacy by:
                                     </Typography>
 
-                                    <Typography component="ul" sx={{ pl: 2, textAlign: 'justify',fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.125rem' }}}>
-                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize:'inherit' }}>
+                                    <Typography component="ul" sx={{ pl: 2, textAlign: 'justify', fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.125rem' } }}>
+                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
                                             Ensuring a fair and mutually advantageous transaction
                                         </Typography>
-                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize:'inherit' }}>
+                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
                                             Taking a hands-on approach to immerse ourselves in your business
                                         </Typography>
-                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize:'inherit' }}>
+                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
                                             Empowering your team to embrace new challenges and growth opportunities
                                         </Typography>
-                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize:'inherit' }}>
+                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
                                             Our mission is to respect the strong foundation you've established and steer your business towards future achievements
                                         </Typography>
                                     </Typography>
@@ -225,7 +225,7 @@ export default function Home() {
                                         fontFamily: 'var(--font-montserrat)',
                                         fontSize: { xs: '1.5rem', sm: '2.125rem' },
                                         color: "#333",
-                                        mb: {xs:1, sm:2},
+                                        mb: { xs: 1, sm: 2 },
 
                                     }}
                                 >
@@ -242,25 +242,25 @@ export default function Home() {
                                     }}
                                 >
                                     <Typography variant='subtitle1'
-                                    sx={{
-                                        textAlign: 'justify',
-                                        fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.12rem' },
-                                    }}
+                                        sx={{
+                                            textAlign: 'justify',
+                                            fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.12rem' },
+                                        }}
                                     >
                                         Business owners that:
                                     </Typography>
 
-                                    <Typography component="ul" sx={{ pl: 2, textAlign: 'justify',fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.125rem' }}}>
-                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize:'inherit' }}>
+                                    <Typography component="ul" sx={{ pl: 2, textAlign: 'justify', fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.125rem' } }}>
+                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
                                             Desire a successful continuity of their business
                                         </Typography>
-                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize:'inherit' }}>
+                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
                                             Prioritize a smooth and transparent transition of ownership
                                         </Typography>
-                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize:'inherit' }}>
+                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
                                             Want employees, customers, and suppliers well taken care of in the future
                                         </Typography>
-                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize:'inherit' }}>
+                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
                                             Understand the purchase price isn't the only factor to be considered during the  transaction
                                         </Typography>
                                     </Typography>
@@ -331,7 +331,7 @@ export default function Home() {
                                         fontFamily: 'var(--font-montserrat)',
                                         fontSize: { xs: '1.5rem', sm: '2.125rem' },
                                         color: "#333",
-                                        mb: {xs:1, sm:2},
+                                        mb: { xs: 1, sm: 2 },
                                     }}
                                 >
                                     WHAT WE ARE SEEKING
@@ -346,29 +346,29 @@ export default function Home() {
                                     }}
                                 >
                                     <Typography
-                                         variant='subtitle1'   
-                                         sx={{
-                                             textAlign: 'justify',
-                                             fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.12rem' },
-                                         }}
+                                        variant='subtitle1'
+                                        sx={{
+                                            textAlign: 'justify',
+                                            fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.12rem' },
+                                        }}
                                     >
                                         We are looking for business that:
                                     </Typography>
 
                                     <Typography component="ul" sx={{ pl: 2 }}>
-                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize:'inherit' }}>
+                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
                                             Are located in the Triangle region of North Carolina
                                         </Typography>
-                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize:'inherit' }}>
+                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
                                             Operates in markets with long-term viability and growth opportunities
                                         </Typography>
-                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize:'inherit' }}>
+                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
                                             Have management in place
                                         </Typography>
-                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize:'inherit' }}>
+                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
                                             Have revenue between $3M to $15M
                                         </Typography>
-                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize:'inherit' }}>
+                                        <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
                                             Have EBITDA greater than $500K
                                         </Typography>
                                     </Typography>
