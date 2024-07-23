@@ -29,7 +29,7 @@ function DrawerAppBar() {
       <List>
         {navItems.map((item) => (
           <Link key={item.label} href={item.href} passHref>
-            <ListItem ButtonBase sx={{ justifyContent: 'center' }}>
+            <ListItem buttonbase="true" sx={{ justifyContent: 'center' }}>
               {item.label === 'Contact Us' ? (
                 <Button
                   variant="contained"
@@ -69,7 +69,7 @@ function DrawerAppBar() {
               <IconButton disableRipple>    
                 <Image
                   src="/logo1.png"
-                  alt="Vulcan Harbor Venture Logo"
+                  alt="Vulcan Harbor Ventures Logo"
                   width={100} 
                   height={50}
                   />
@@ -83,9 +83,9 @@ function DrawerAppBar() {
             <Typography
               variant="h6"
               component="div"
-              sx={{ color:'rgb(184 56 47)',ml: 2, display: { xs: 'none', sm: 'block' }, fontFamily: 'var(--font-montserrat)', fontWeight: 'bold',    fontSize: { xs: '1rem', sm: '1.5rem', md: '1.75rem', lg: '2rem' } }}
+              sx={{ color:'rgb(184 56 47)',ml: 2, display: { xs: 'none', sm: 'block' }, fontFamily: 'var(--font-montserrat)', fontWeight: 'bold',    fontSize: { xs: '0.75rem', sm: '1rem', md: '1.25rem', lg: '1.25rem' } }}
               >
-              Vulcan Harbor Venture
+              Vulcan Harbor Ventures
             </Typography>
             <Typography
               variant="body1"
@@ -96,10 +96,10 @@ function DrawerAppBar() {
                 display: { xs: 'block', sm: 'none' },
                 fontFamily: 'var(--font-montserrat)',
                 fontWeight: 'bold',
-                fontSize: { xs: '0.95rem', sm: '1.5rem' },
+                fontSize: { xs: '0.9rem'},
               }}
             >
-              Vulcan Harbor Venture
+              Vulcan Harbor Ventures
             </Typography>
             </Link>
               </Box>

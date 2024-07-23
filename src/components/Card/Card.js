@@ -15,6 +15,7 @@ export default function Card({
     return(
         <CardMUI 
           sx={{
+            borderRadius:"25px",
             bgcolor: themeDefault.palette.background.paper, 
             display: 'flex',
             flexDirection: 'column',
@@ -29,6 +30,7 @@ export default function Card({
                   sx={{
                     height: 'auto',
                     width: 'auto',
+                    borderRadius:'25px',
                     objectFit: 'cover',
                   }}
               />
@@ -42,7 +44,7 @@ export default function Card({
                   {title}
                 </Typography>
                 <br></br>
-                <Typography align="center">
+                <Typography variant="h6" align="center">
                   {subtitle}
                 </Typography>
               </CardContent>

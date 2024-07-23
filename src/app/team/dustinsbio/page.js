@@ -1,59 +1,112 @@
 /* eslint-disable react/no-unescaped-entities */
 import TemplateDefault from '@/templates/Default';
-import { Box, Container} from '@mui/system';
+import {Stack, Box, Container } from '@mui/system';
 import { Grid, Typography } from '@mui/material';
-// import styles from "@/app/page.module.css";
+
 
 export default function DustinBios() {
-    return(
+    return (
         <TemplateDefault>
-               
-            <Box sx={{bgcolor:'rgb(242, 244, 245)', mt:8, position:'relative'}} >
-                <Container>
-                        <Typography  component="h1" variant="h3" align='center' color="#000">
-                            Dustin Cotcamp - 
-                        </Typography>
-                    <Grid  container spacing ={6}>
-                        <Grid item xs={12} sm={6}>
+
+            <Box sx={{
+                mt:8,
+                bgcolor: 'rgb(242, 244, 245)',
+                position: 'relative',
+                py: { xs: 4, sm: 6 },
+                minHeight: '100vh',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+            }} >
+                <Typography component="h1" variant="h3" align='center' sx={{ mb: 4 }}>
+                    Dustin Cotcamp
+                </Typography>
+
+                <Container maxWidth="lg">
+                    <Grid container
+                        spacing={{ xs: 2, sm: 6, lg: 10 }}
+                        alignItems="center"
+                        sx={{ height: '100%' }}>
+
+                        <Grid 
+                            item xs={12} sm={6} 
+                            sx={{ 
+                                order: { xs: 1, sm: 2, lg: 2 }, 
+                                display: 'flex', 
+                                flexDirection: 'column', 
+                                justifyContent: 'center' 
+                            }}
+                        >
                             <Box
                                 component="img"
                                 sx={{
-                                mr:4,     
-                                height: 'auto',
-                                width: '100%',
+                                    height: 'auto',
+                                    width: '100%',
+                                    borderRadius: "25px",
+                                    boxShadow: 3,
                                 }}
-                                alt="The house from the offer."
-                                src="/dustinportrait.jfif"
+                                alt="Dustin Cotcamp"
+                                src="/HeadshotCloseUp.jpg"
                             />
                         </Grid>
-                        <Grid item xs={12} sm={6}>
-                            <Box sx={{mb:4}}>
+                        <Grid item xs={12} sm={6} sx={{ order: { xs: 2, sm: 1, lg: 2 }, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                            <Stack spacing={1}
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'left',
+                                    justifyContent: 'center',
+                                    width: '100%',
 
-                                <Typography sx={{fontFamily: 'var(--font-montserrat)', mb:4}}>
-                                    Originally from Poughkeepsie, NY, Dustin Cotcamp has a diverse background spanning over 15 years. Dustin developed a unique set of skills and abilities that make him a versatile and effective leader. 
+                                }}>
+
+                                <Typography sx={{ textAlign: 'justify',
+                                            fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.12rem' },  fontWeight: 'bold' }}>
+                                 Entrepreneur, Business Strategist, and Mentor
                                 </Typography>
 
-                                <Typography sx={{fontFamily: 'var(--font-montserrat)', my:4}}>
-                                    His entrepreneurial journey began as a professional poker player, where he mastered strategic thinking, financial management, and risk assessment. This honed his analytical skills and his ability to remain calm under pressure.  
+                                <Typography sx={{ mb: 2, lineHeight: 1.6 }}>
+                                    Originally from Poughkeepsie, NY, Dustin Cotcamp brings over 15 years of diverse experience to the table. With a unique blend of strategic insight, leadership acumen, and operational expertise, Dustin has carved a niche as a versatile and effective leader in the entrepreneurial world.
                                 </Typography>
 
-                                <Typography sx={{fontFamily: 'var(--font-montserrat)', my:4}}>
-                                    Transitioning from poker to the corporate world, Dustin excelled as a Technical Support Specialist at ProVantage Corporate Solutions. Here, he developed expertise in technical training, customer success and support, and cross-functional team management.  
+                                <Typography sx={{ mb: 2, lineHeight: 1.6, fontWeight: 'bold' }}>
+                                    Entrepreneurial Beginnings and Global Exposure
                                 </Typography>
 
-                                <Typography sx={{fontFamily: 'var(--font-montserrat)', my:4}}>
-                                    Later, he took on the challenge of managing his family's 500-acre farm and Airbnb business in Brazil. This role enhanced his operational management skills, as he implemented systems and processes that improved efficiency and productivity providing his team with the necessary tools to succeed. 
-                                </Typography>
-                                
-                                <Typography sx={{fontFamily: 'var(--font-montserrat)', my:4}}>
-                                    Most recently, Dustin served as a Sales Account Executive at Maze Wayz, where he further developed his sales and marketing acumen. His ability to understand customer needs, build strong client relationships, and drive business growth has been a key achievement of his career. 
+                                <Typography sx={{ mb: 2, lineHeight: 1.6 }}>
+                                    Dustin’s entrepreneurial journey took off as a professional poker player, a career that had him traveling across Brazil, Costa Rica, and Canada. This experience honed his strategic thinking, financial management, and risk assessment skills, all while maintaining composure under pressure. The exposure to various cultures, languages, and experiences broadened his worldview and instilled in him the confidence to lead with a global perspective.
                                 </Typography>
 
-                                <Typography sx={{fontFamily: 'var(--font-montserrat)', my:4}}>
-                                    In his personal life, Dustin lives in Durham, NC with his wife and three young children where they continue to embrace new challenges and opportunities. He enjoys staying active through exercise, sports, and games with his kids. He is an active mentor for aspiring entrepreneurs as a top contributor in Codie Sanchez’s Contrarian Thinking business buying community where he shares his experience and insights on how to navigate acquisition entrepreneurship.
+                                <Typography sx={{ mb: 2, lineHeight: 1.6, fontWeight: 'bold' }}>
+                                    Corporate Transition and Technical Expertise
                                 </Typography>
 
-                            </Box>
+                                <Typography sx={{ mb: 2, lineHeight: 1.6 }}>
+                                    Transitioning from poker to the corporate sector, Dustin excelled as a Technical Support Specialist at ProVantage Corporate Solutions. Here, he leveraged his analytical skills to master technical training, customer success, and cross-functional team management. His role was pivotal in enhancing operational efficiency and productivity, ensuring that his team had the tools needed to succeed.
+                                </Typography>
+
+                                <Typography sx={{ mb: 2, lineHeight: 1.6, fontWeight: 'bold' }}>
+                                    Agricultural Management and Operational Excellence
+                                </Typography>
+
+                                <Typography sx={{ mb: 2, lineHeight: 1.6 }}>
+                                    Dustin’s next challenge was managing his family’s 500-acre farm and Airbnb business in Brazil. This role further refined his operational management skills as he implemented systems and processes that significantly improved efficiency and productivity.
+                                </Typography>
+                                <Typography sx={{ mb: 2, lineHeight: 1.6, fontWeight: 'bold' }}>
+                                    Sales Leadership and Business Development
+                                </Typography>
+
+                                <Typography sx={{ mb: 2, lineHeight: 1.6 }}>
+                                    Most recently, Dustin served as a Sales Account Executive at Maze Wayz, where he sharpened his sales and marketing acumen. His ability to understand customer needs, build strong client relationships, and drive business growth has been a cornerstone of his career achievements.
+
+                                </Typography>
+                                <Typography sx={{ mb: 2, lineHeight: 1.6, fontWeight: 'bold' }}>
+                                    Personal Life and Mentorship
+                                </Typography>
+
+                                <Typography sx={{ mb: 2, lineHeight: 1.6 }}>
+                                    Currently residing in Durham, NC, with his wife and three young children, Dustin embraces new challenges and opportunities. He stays active through exercise, sports, and engaging activities with his kids. As a mentor, he actively contributes to Cody Sanchez’s Contrarian Thinking business buying community, sharing his expertise and insights on navigating acquisition entrepreneurship.
+                                </Typography>
+                            </Stack>
                         </Grid>
                     </Grid>
                 </Container>

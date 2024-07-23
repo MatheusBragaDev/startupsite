@@ -3,7 +3,6 @@ import TemplateDefault from '@/templates/Default';
 import { Box, Container, Grid, List, ListItem, ListItemText, Typography } from '@mui/material';
 import BackgroundImage from "@/components/BackgroundImage";
 import { Stack } from '@mui/system';
-// import styles from "@/app/page.module.css";
 
 export default function Home() {
     return (
@@ -23,16 +22,15 @@ export default function Home() {
                 }}
             >
                 <BackgroundImage />
-                <Container maxWidth="lg" sx={{ position: 'relative', height: '100%' }}>
+                <Container maxWidth="lg" sx={{ position: 'relative', height: '100%', display:'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                     <Box
                         sx={{
                             width: '100%',
-                            px: { xs: 2, sm: 8 },
-                            py: { xs: 5, sm: 6 },
+                            pt:{xs:5,sm:2,md:3,lg:4,xl:5},
                             display: 'flex',
                             flexDirection: 'column',
-                            justifyContent: 'space-between',
-                            height: '80%',
+                            justifyContent: 'center',
+                            alignItems: 'center',
                         }}
                     >
                         <Typography
@@ -40,9 +38,7 @@ export default function Home() {
                             variant="h1"
                             align='center'
                             sx={{
-                                mt: { xs: 0.5, sm: 0.2 },
-                                fontSize: { xs: '1.5rem', sm: '2.125rem' },
-                                fontFamily: 'var(--font-montserrat)',
+                                fontSize: { xs: '1.5rem', sm: '2rem', md:'2rem', lg:'2.3rem', xl:'3rem' },
                                 fontWeight: 'bold'
                             }}
                         >
@@ -50,13 +46,13 @@ export default function Home() {
                         </Typography>
                     </Box>
 
+                    <Box sx ={{flexGrow:1}}/>
+
                     <Box
                         sx={{
                             width: '100%',
-                            px: { xs: 2, sm: 8 },
-                            pb: { xs: 5, sm: 10 },
                             textAlign: 'center',
-                            mt: 'auto',
+                            pb:2,
                         }}
                     >
                         <Typography
@@ -70,6 +66,7 @@ export default function Home() {
                                 position: 'relative',
                                 fontWeight: 'bold',
                                 fontStyle: 'italic',
+                                mb:0.5,
                             }}
                         >
                             “The secret of success lies not in doing your own work, but in recognizing the right person to do it.”
@@ -111,11 +108,11 @@ export default function Home() {
                         sx={{ height: '100%' }}
                     >
 
-                        <Grid item xs={12} sm={6} sx={{ order: { xs: 1, sm: 2, lg: 1 }, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                        <Grid item xs={12} sm={6} sx={{ order: { xs: 1, sm: 2, lg: 2 }, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                             <Box
                                 component="img"
                                 sx={{
-                                    height: { xs: 'auto', sm: 'auto', lg: 'auto' },
+                                    height: { xs: 'auto', sm: 'auto', lg: '405px' },
                                     maxWidth: { xs: '100%', sm: '100%' },
                                     borderRadius: "25px",
                                 }}
@@ -159,7 +156,6 @@ export default function Home() {
                                     }}
                                 >
                                     <Typography
-                                        variant='subtitle1'
                                         sx={{
                                             textAlign: 'justify',
                                             fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.12rem' },
@@ -241,7 +237,7 @@ export default function Home() {
                                         width: '100%',
                                     }}
                                 >
-                                    <Typography variant='subtitle1'
+                                    <Typography
                                         sx={{
                                             textAlign: 'justify',
                                             fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.12rem' },
@@ -275,6 +271,7 @@ export default function Home() {
                                 sx={{
                                     height: { xs: 'auto', sm: 'auto', lg: 'auto' },
                                     width: { xs: '100%', sm: '100%' },
+                                    objectFit:'cover',
                                     borderRadius: "25px",
                                 }}
                                 alt="WHO YOU ARE PICTURE"
@@ -346,7 +343,6 @@ export default function Home() {
                                     }}
                                 >
                                     <Typography
-                                        variant='subtitle1'
                                         sx={{
                                             textAlign: 'justify',
                                             fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.12rem' },
@@ -355,7 +351,7 @@ export default function Home() {
                                         We are looking for business that:
                                     </Typography>
 
-                                    <Typography component="ul" sx={{ pl: 2 }}>
+                                    <Typography component="ul" sx={{ pl: 2, textAlign: 'justify', fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.125rem' } }}>
                                         <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
                                             Are located in the Triangle region of North Carolina
                                         </Typography>

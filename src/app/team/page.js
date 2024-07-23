@@ -2,8 +2,8 @@ import TemplateDefault from '@/templates/Default';
 import { Box, Container, } from '@mui/system';
 import { Grid, Typography, Button } from '@mui/material';
 import Card from '@/components/Card/Card'
-import Image from 'next/image'
 import Link from 'next/link';
+import backgroundimage from '../../../public/teamcontactbg.png';
 
 export default function Team() {
   return (
@@ -11,6 +11,7 @@ export default function Team() {
 
       <Box
         sx={{
+          minHeight: '20vh',
           width: '100vw',
           mt: 8,
           position: 'relative'
@@ -26,40 +27,12 @@ export default function Team() {
             zIndex: -1,
             overflow: 'hidden',
             opacity: 1,
+            backgroundImage: `url(${backgroundimage.src})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            
           }}>
-          <Image
-            alt="backgroundimage"
-            src="/team.jfif"
-            quality={100}
-            fill
-            sizes="100vhw"
-            style={{
-              objectFit: 'cover',
-            }}
-          />
-        </Box>
-
-        <Box
-          sx={{
-            px: 'auto',
-            py: 'auto',
-            justifyContent: 'center',
-            textAlign: 'center'
-          }}
-        >
-          <Typography
-            component="h1"
-            variant="h4"
-            sx={{
-              py: { xs: 2, sm: 5 },
-              fontSize: { xs: '1.5rem', sm: '2.125rem' },
-              fontFamily: 'var(--font-montserrat)',
-              position: 'relative',
-              fontWeight: 'bold',
-            }}
-          >
-            VULCAN HARBOR VENTURE TEAM
-          </Typography>
         </Box>
       </Box>
 
@@ -67,7 +40,7 @@ export default function Team() {
         sx={{
           bgcolor: 'rgb(242, 244, 245)',
           position: 'relative',
-          minHeight: '100vh',
+          minHeight: '80vh',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -79,22 +52,22 @@ export default function Team() {
           variant="h4"
           align="center"
           sx={{
-            fontSize: { xs: '1.5rem', sm: '2.125rem' },
+            textAlign: "center",
             fontFamily: 'var(--font-montserrat)',
-            position: 'relative',
-            py: { xs: 1, sm: 1 },
+            fontSize: { xs: '1.5rem', sm: '2.125rem' },
+            color: "#333",
+            mb: { xs: 1, sm: 2 },
           }}
         >
           Meet the team
         </Typography>
-
         <Container maxWidth="lg">
           <Grid container spacing={4} justifyContent="center">
             <Grid item xs={12} sm={6} md={4}>
               <Card
                 image={"/dustinportrait.jfif"}
-                title={"Dustin"}
-                subtitle="Dustin´s Role"
+                title={"Dustin Cotcamp"}
+                subtitle="Principal"
                 actions={
                   <>
                     <Link
