@@ -13,7 +13,7 @@ export default function Home() {
                     width: '100vw',
                     height: '100vh',
                     display: 'flex',
-                    mt: 8,
+                    mt: {xs:5,sm:8,md:8,lg:8,xl:8},
                     position: 'relative',
                     overflow: 'hidden',
                     flexDirection: 'column',
@@ -27,6 +27,7 @@ export default function Home() {
                         sx={{
                             width: '100%',
                             pt:{xs:5,sm:2,md:3,lg:4,xl:5},
+                            mt:{xs:5,sm:8,md:8,lg:8, xl:2},
                             display: 'flex',
                             flexDirection: 'column',
                             justifyContent: 'center',
@@ -38,7 +39,7 @@ export default function Home() {
                             variant="h1"
                             align='center'
                             sx={{
-                                fontSize: { xs: '1rem', sm: '1rem', md:'1.8rem', lg:'2rem', xl:'2.1rem' },
+                                fontSize: { xs: '1.35rem', sm: '1.35rem', md:'1.8rem', lg:'2rem', xl:'2.1rem' },
                                 fontWeight: 'bold'
                             }}
                         >
@@ -52,7 +53,7 @@ export default function Home() {
                         sx={{
                             width: '100%',
                             textAlign: 'center',
-                            pb:2,
+                            pb:3,
                         }}
                     >
                         <Typography
@@ -112,8 +113,8 @@ export default function Home() {
                             <Box
                                 component="img"
                                 sx={{
-                                    height: { xs: '225px', sm: '230px', md: '370px',lg: 'auto' },
-                                    maxWidth: { xs: '225px', sm: '230px', md:'370px', lg:'auto' },
+                                    height: { xs: '300px', sm: '300px', md: '370px',lg: 'auto' },
+                                    maxWidth: { xs: '300px', sm: '300px', md:'370px', lg:'auto' },
                                     borderRadius: "25px",
                                 }}
                                 alt="Dustin portrait"
@@ -266,7 +267,7 @@ export default function Home() {
                             <Box
                                 component="img"
                                 sx={{
-                                    height: { xs: 'auto', sm: 'auto', lg: 'auto' },
+                                    height: { xs: '300px', sm: '300px', lg: 'auto' },
                                     width: { xs: '100%', sm: '100%' },
                                     objectFit:'cover',
                                     borderRadius: "25px",
@@ -297,7 +298,7 @@ export default function Home() {
                             <Box
                                 component="img"
                                 sx={{
-                                    height: { xs: 'auto', sm: 'auto', lg: 'auto' },
+                                    height: { xs: '300px', sm: '300px', lg: 'auto' },
                                     width: { xs: '100%', sm: '100%' },
                                     borderRadius: "25px",
                                 }}

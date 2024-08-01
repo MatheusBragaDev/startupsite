@@ -9,7 +9,7 @@ export default function DustinBios() {
         <TemplateDefault>
 
             <Box sx={{
-                mt:8,
+                mt: {xs:5,sm:8,md:8,lg:8,xl:8},
                 bgcolor: 'rgb(242, 244, 245)',
                 position: 'relative',
                 py: { xs: 4, sm: 6 },

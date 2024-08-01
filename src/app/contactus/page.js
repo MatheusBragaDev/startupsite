@@ -11,9 +11,9 @@ export default function Contactus() {
 
       <Box
         sx={{
-          minHeight: '20vh',
+          minHeight: '50vh',
           width: '100vw',
-          mt: 8,
+          mt: {xs:5,sm:8,md:8,lg:8,xl:8},
           position: 'relative'
         }}
       >
@@ -54,7 +54,7 @@ export default function Contactus() {
           sx={{
             fontSize: { xs: '1rem', sm: '1.2rem' },
             position: 'relative',
-            py: { xs: 1, sm: 1 },
+            py: { xs: 3, sm: 3 },
           }}
         >
           Contact us to learn more about Vulcan Harbor Ventures, or confidentially discuss specific opportunities of investment or acquisition.
@@ -66,7 +66,7 @@ export default function Contactus() {
           <Grid container spacing={4} justifyContent="center">
             <Grid item xs={12} sm={6} md={4}>
               <Card
-                image={"/dustinportrait.jfif"}
+                image={"/meetphoto.png"}
                 title={"Dustin Cotcamp"}
                 subtitle="Principal"
                 actions={
