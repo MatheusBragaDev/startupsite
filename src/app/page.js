@@ -38,11 +38,11 @@ export default function Home() {
                             variant="h1"
                             align='center'
                             sx={{
-                                fontSize: { xs: '1.5rem', sm: '2rem', md:'2rem', lg:'2.3rem', xl:'3rem' },
+                                fontSize: { xs: '1rem', sm: '1rem', md:'1.8rem', lg:'2rem', xl:'2.1rem' },
                                 fontWeight: 'bold'
                             }}
                         >
-                            We acquire, operate and grow the legacy of privately held companies in the Triangle region of North Carolina
+                            We acquire, operate, grow, and continue the legacy of privately held businesses in the Triangle region of North Carolina
                         </Typography>
                     </Box>
 
@@ -103,25 +103,25 @@ export default function Home() {
                 <Container maxWidth="lg">
                     <Grid
                         container
-                        spacing={{ xs: 2, sm: 6, lg: 10 }}
+                        spacing={{ xs: 2, sm: 2, md:0,lg: 0 }}
                         alignItems="center"
                         sx={{ height: '100%' }}
                     >
 
-                        <Grid item xs={12} sm={6} sx={{ order: { xs: 1, sm: 2, lg: 2 }, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                        <Grid item xs={12} sm={6} sx={{ order: { xs: 1, sm: 2, md:1, lg: 1 }, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', }}>
                             <Box
                                 component="img"
                                 sx={{
-                                    height: { xs: 'auto', sm: 'auto', lg: '405px' },
-                                    maxWidth: { xs: '100%', sm: '100%' },
+                                    height: { xs: '225px', sm: '230px', md: '370px',lg: 'auto' },
+                                    maxWidth: { xs: '225px', sm: '230px', md:'370px', lg:'auto' },
                                     borderRadius: "25px",
                                 }}
                                 alt="Dustin portrait"
-                                src="/dustinportrait.jfif"
+                                src="/dustinportrait.jpg"
                             />
                         </Grid>
 
-                        <Grid item xs={12} sm={6} sx={{ order: { xs: 2, sm: 1, lg: 2 }, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                        <Grid item xs={12} sm={6} sx={{ order: { xs: 2, sm: 1, md:2, lg: 2 }, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                             <Stack
                                 spacing={2}
                                 sx={{
@@ -138,7 +138,7 @@ export default function Home() {
                                         textAlign: "center",
                                         fontFamily: 'var(--font-montserrat)',
                                         fontSize: { xs: '1.5rem', sm: '2.125rem' },
-                                        color: "#333",
+                                    
                                         mb: { xs: 1, sm: 2 },
 
                                     }}
@@ -148,34 +148,31 @@ export default function Home() {
 
                                 <Stack
                                     spacing={2}
-                                    sx={{
-
-                                        textAlign: 'left',
-                                        color: '#555',
+                                    sx={{                                   
                                         width: '100%',
                                     }}
                                 >
                                     <Typography
                                         sx={{
-                                            textAlign: 'justify',
+                                            
                                             fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.12rem' },
                                         }}
                                     >
-                                        We are dedicated entrepreneurs with a diverse background of professional experiences and a wide range of skills. Our commitment is to carry forward your legacy by:
+                                        We are dedicated and driven entrepreneurs with a diverse background of professional experiences and a wide range of skills. Our commitment is to continue the legacy that you have built by:
                                     </Typography>
 
-                                    <Typography component="ul" sx={{ pl: 2, textAlign: 'justify', fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.125rem' } }}>
+                                    <Typography component="ul" sx={{ pl: 5,  fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.125rem' } }}>
                                         <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
-                                            Ensuring a fair and mutually advantageous transaction
+                                        Ensuring a fair and mutually beneficial transaction
                                         </Typography>
                                         <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
-                                            Taking a hands-on approach to immerse ourselves in your business
+                                        Taking a hands-on approach to immerse ourselves in your business
                                         </Typography>
                                         <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
-                                            Empowering your team to embrace new challenges and growth opportunities
+                                        Empowering your team to embrace new challenges and growth opportunities
                                         </Typography>
                                         <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
-                                            Our mission is to respect the strong foundation you've established and steer your business towards future achievements
+                                        Respecting the strong foundation you've established with  your employees and customers and steering your business towards future achievements
                                         </Typography>
                                     </Typography>
                                 </Stack>
@@ -220,7 +217,7 @@ export default function Home() {
                                         textAlign: "center",
                                         fontFamily: 'var(--font-montserrat)',
                                         fontSize: { xs: '1.5rem', sm: '2.125rem' },
-                                        color: "#333",
+                                    
                                         mb: { xs: 1, sm: 2 },
 
                                     }}
@@ -233,31 +230,31 @@ export default function Home() {
                                     sx={{
 
                                         textAlign: 'left',
-                                        color: '#555',
+                                    
                                         width: '100%',
                                     }}
                                 >
                                     <Typography
                                         sx={{
-                                            textAlign: 'justify',
+                                            
                                             fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.12rem' },
                                         }}
                                     >
-                                        Business owners that:
+                                        Business Owners that:
                                     </Typography>
 
-                                    <Typography component="ul" sx={{ pl: 2, textAlign: 'justify', fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.125rem' } }}>
+                                    <Typography component="ul" sx={{ pl: 5,  fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.125rem' } }}>
                                         <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
-                                            Desire a successful continuity of their business
+                                        Seek to preserve the legacy of their business
                                         </Typography>
                                         <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
-                                            Prioritize a smooth and transparent transition of ownership
+                                        Prioritize a smooth and transparent transition of ownership
                                         </Typography>
                                         <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
-                                            Want employees, customers, and suppliers well taken care of in the future
+                                        Want your employees, customers, and suppliers well taken care of under new management
                                         </Typography>
                                         <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
-                                            Understand the purchase price isn't the only factor to be considered during the  transaction
+                                        Understand the purchase price isn't the only factor to be considered during the transaction
                                         </Typography>
                                     </Typography>
                                 </Stack>
@@ -275,7 +272,7 @@ export default function Home() {
                                     borderRadius: "25px",
                                 }}
                                 alt="WHO YOU ARE PICTURE"
-                                src="/raleighbusiness.png"
+                                src="/BoomerBizOwnerResize.jpg"
                             />
                         </Grid>
                     </Grid>
@@ -305,7 +302,7 @@ export default function Home() {
                                     borderRadius: "25px",
                                 }}
                                 alt="WHAT WE ARE SEEKING"
-                                src="/raleighbusiness2.png"
+                                src="/HandShakeDeal.jpg"
 
                             />
                         </Grid>
@@ -327,7 +324,7 @@ export default function Home() {
                                         textAlign: "center",
                                         fontFamily: 'var(--font-montserrat)',
                                         fontSize: { xs: '1.5rem', sm: '2.125rem' },
-                                        color: "#333",
+                                    
                                         mb: { xs: 1, sm: 2 },
                                     }}
                                 >
@@ -338,34 +335,34 @@ export default function Home() {
                                     spacing={2}
                                     sx={{
                                         textAlign: 'left',
-                                        color: '#555',
+                                    
                                         width: '100%',
                                     }}
                                 >
                                     <Typography
                                         sx={{
-                                            textAlign: 'justify',
+                                            
                                             fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.12rem' },
                                         }}
                                     >
-                                        We are looking for business that:
+                                       We are looking for businesses that:
                                     </Typography>
 
-                                    <Typography component="ul" sx={{ pl: 2, textAlign: 'justify', fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.125rem' } }}>
+                                    <Typography component="ul" sx={{ pl: 5,  fontSize: { xs: '0.875rem', sm: '1rem', lg: '1.125rem' } }}>
                                         <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
-                                            Are located in the Triangle region of North Carolina
+                                        Are located in the Triangle region of North Carolina
                                         </Typography>
                                         <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
-                                            Operates in markets with long-term viability and growth opportunities
+                                        Operate in markets with long-term viability and growth opportunities
                                         </Typography>
                                         <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
-                                            Have management in place
+                                        Have management in place
                                         </Typography>
                                         <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
                                             Have revenue between $3M to $15M
                                         </Typography>
                                         <Typography component="li" variant="body2" sx={{ display: 'list-item', fontSize: 'inherit' }}>
-                                            Have EBITDA greater than $500K
+                                        Have cash flow greater than $500k
                                         </Typography>
                                     </Typography>
                                 </Stack>

@@ -9,6 +9,20 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import {styled} from '@mui/material/styles'
+
+
+// Estilo responsivo para a imagem
+const ResponsiveImage = styled(Image)(({ theme }) => ({
+  [theme.breakpoints.down('sm')]: {
+    width: '80px', // Tamanho para telas pequenas
+    height: '40px',
+  },
+  [theme.breakpoints.up('sm')]: {
+    width: '100px', // Tamanho para telas médias e grandes
+    height: '50px',
+  },
+}));
 
 const navItems = [
   { label: 'Home', href: '/' },
@@ -67,7 +81,7 @@ function DrawerAppBar() {
               passHref 
               >
               <IconButton disableRipple>    
-                <Image
+                <ResponsiveImage
                   src="/logo1.png"
                   alt="Vulcan Harbor Ventures Logo"
                   width={100} 
@@ -83,7 +97,7 @@ function DrawerAppBar() {
             <Typography
               variant="h6"
               component="div"
-              sx={{ color:'rgb(184 56 47)',ml: 2, display: { xs: 'none', sm: 'block' }, fontFamily: 'var(--font-montserrat)', fontWeight: 'bold',    fontSize: { xs: '0.75rem', sm: '1rem', md: '1.25rem', lg: '1.25rem' } }}
+              sx={{ color:'rgb(184 56 47)',ml: 2, display: { xs: 'none', sm: 'block' }, fontFamily: 'var(--font-montserrat)', fontWeight: 'bold',    fontSize: { xs: '0.8rem', sm: '1.05rem', md: '1.25rem', lg: '1.25rem' } }}
               >
               Vulcan Harbor Ventures
             </Typography>
