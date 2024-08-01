@@ -13,7 +13,7 @@ import {styled} from '@mui/material/styles'
 
 
 // Estilo responsivo para a imagem
-const ResponsiveImage = styled(Image)(({ theme }) => ({
+const ResponsiveImage = styled('img')(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
     width: '80px', // Tamanho para telas pequenas
     height: '40px',
@@ -76,17 +76,12 @@ function DrawerAppBar() {
       <AppBar component="nav" sx={{ backgroundColor: '#fff', boxShadow: 1 }}>
         <Toolbar sx={{display:'flex', justifyContent:'space-between'}}>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <Link 
-              href="/"
-              passHref 
-              >
+            <Link href="/" passHref>
               <IconButton disableRipple>    
                 <ResponsiveImage
-                  src="/logo1.png"
+                  src="/logo1.jpg"
                   alt="Vulcan Harbor Ventures Logo"
-                  width={100} 
-                  height={50}
-                  />
+                />
               </IconButton>
             </Link>
 
