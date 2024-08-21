@@ -35,7 +35,7 @@ import Link from 'next/link';
                                         fontSize: { xs: '0.75rem', sm: '1rem' },
                                         }}
                                 >
-                                    HOME
+                                    Home
                                 </Typography> 
                             </Link> 
                         </Box>
@@ -55,7 +55,7 @@ import Link from 'next/link';
                                         fontSize: { xs: '0.75rem', sm: '1rem' }
                                         }}
                                 >
-                                    OUR TEAM
+                                    Our Team
                                 </Typography> 
                             </Link> 
                         </Box>
@@ -75,7 +75,7 @@ import Link from 'next/link';
                                         fontSize: { xs: '0.75rem', sm: '1rem' }
                                         }}
                                 >
-                                    CONTACT US
+                                    Contact Us
                                 </Typography> 
                             </Link> 
                         </Box>

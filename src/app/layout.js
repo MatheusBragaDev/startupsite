@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Vulcan Harbor Venture",
-  description: "Startup Site",
+  description: "Live Long and Grow Businesses",
 }
 
 

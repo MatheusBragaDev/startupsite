@@ -9,7 +9,7 @@ export default function Contactus() {
   return (
     <TemplateDefault>
 
-      <Box
+      {/* <Box
         sx={{
           minHeight: '50vh',
           width: '100vw',
@@ -35,16 +35,17 @@ export default function Contactus() {
           }}>
 
         </Box>
-      </Box>
+      </Box> */}
 
       <Box
         sx={{
           bgcolor: 'rgb(242, 244, 245)',
           position: 'relative',
-          minHeight: '60vh',
+          minHeight: '100vh',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
+          py: { xs: 4, sm: 6 },
         }}
       >
         <Typography
@@ -55,6 +56,7 @@ export default function Contactus() {
             fontSize: { xs: '1rem', sm: '1.2rem' },
             position: 'relative',
             py: { xs: 3, sm: 3 },
+            mb:7,
           }}
         >
           Contact us to learn more about Vulcan Harbor Ventures, or confidentially discuss specific opportunities of investment or acquisition.
@@ -64,30 +66,41 @@ export default function Contactus() {
 
         <Container maxWidth="lg">
           <Grid container spacing={4} justifyContent="center">
-            <Grid item xs={12} sm={6} md={4}>
+            <Grid item xs={12} sm={8} md={6} lg={4}>
               <Card
-                image={"/meetphoto.png"}
+                image={""}
                 title={"Dustin Cotcamp"}
-                subtitle="Principal"
+                subtitle=""
                 actions={
                   <>
-                    <Typography variant="body2">
-                      Email: <Link href="mailto:dustincodercamp@gmail.com">dustincodercamp@gmail.com</Link>
+
+                    <Typography variant="body2" >
+                      Phone: <Link href="tel:914-208-1372"style={{color: 'rgb(184 56 47)',}}>914-208-1372</Link>
                     </Typography>
+
+
                     <Typography variant="body2">
-                      LinkedIn: <Link href="https://www.linkedin.com/in/dustincotcamp/" target="_blank">linkedin/Dustin</Link>
+                      Email: <Link href="mailto:dustin@vulcanharborventures.com" style={{color: 'rgb(184 56 47)',}}>dustin@vulcanharborventures.com</Link>
                     </Typography>
+
+
+                    <Typography variant="body2">
+                      LinkedIn: <Link href="https://www.linkedin.com/in/dustincotcamp/" target="_blank"style={{color: 'rgb(184 56 47)',}}>linkedin/Dustin</Link>
+                    </Typography>
+
+
                     <Button size="small" color="primary" variant='contained'
                      sx={{
                       py: { sm: 1 },
-                      px: { sm: 1 },
+                      px: { sm: 2 },
+                      my: 2,
                       backgroundColor: 'rgb(184 56 47)',
                       color: '#fff',
                       '&:hover': {
                         backgroundColor: 'rgb(150 45 36)',
                       },
                     }}>
-                      Book a meeting (Calendar)
+                      <Link href="https://calendly.com/dustin-vulcanharborventures/30min" target="_blank">Book a meeting (Calendar)</Link>
                     </Button>
                   </>
                 }

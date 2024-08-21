@@ -9,7 +9,7 @@ export default function Team() {
   return (
     <TemplateDefault>
 
-      <Box
+      {/* <Box
         sx={{
           minHeight: '50vh',
           width: '100vw',
@@ -34,13 +34,14 @@ export default function Team() {
             
           }}>
         </Box>
-      </Box>
+      </Box> */}
 
       <Box
         sx={{
+          mt: {xs:5,sm:8,md:8,lg:8,xl:8},
           bgcolor: 'rgb(242, 244, 245)',
           position: 'relative',
-          minHeight: '80vh',
+          minHeight: '100vh',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -48,20 +49,18 @@ export default function Team() {
 
       >
         <Typography
-          component="h4"
-          variant="h4"
+          component="h1"
+          variant="h3"
           align="center"
           sx={{
             textAlign: "center",
             fontFamily: 'var(--font-montserrat)',
-            fontSize: { xs: '1.5rem', sm: '2.125rem' },
-            color: "#333",
-            mb: { xs: 1, sm: 2 },
+            my: 3,
           }}
         >
-          Meet the team
+          Meet the Team
         </Typography>
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" sx={{my:2}}>
           <Grid container spacing={4} justifyContent="center">
             <Grid item xs={12} sm={6} md={4}>
               <Card
@@ -70,27 +69,22 @@ export default function Team() {
                 subtitle="Principal"
                 actions={
                   <>
-                    <Link
-                      href="/team/dustinsbio"
-                      passHref >
-                      <Button
-                        size="small"
-                        color="primary"
-                        variant="contained"
-                        sx={{
-                          py: { sm: 1 },
-                          px: { sm: 1 },
-                          backgroundColor: 'rgb(184 56 47)',
-                          color: '#fff',
-                          '&:hover': {
-                            backgroundColor: 'rgb(150 45 36)',
-                          },
-                        }}
+                  <Typography variant="body2" >
+                        
+                  </Typography>
 
-                      >
-                        Dustin´s Bio
-                      </Button>
-                    </Link>
+                   <Button size="small" color="primary" variant='contained'
+                     sx={{
+                      py: { sm: 1 },
+                      px: { sm: 2 },
+                      backgroundColor: 'rgb(184 56 47)',
+                      color: '#fff',
+                      '&:hover': {
+                        backgroundColor: 'rgb(150 45 36)',
+                      },
+                    }}>
+                      <Link href="/team/dustinsbio">Dustin´s Bio</Link>
+                    </Button>
                   </>
                 }
               />
