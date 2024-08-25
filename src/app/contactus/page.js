@@ -100,7 +100,7 @@ export default function Contactus() {
                         backgroundColor: 'rgb(150 45 36)',
                       },
                     }}>
-                      <Link href="https://calendly.com/dustin-vulcanharborventures/30min" target="_blank">Book a meeting (Calendar)</Link>
+                      <Link href="https://calendly.com/dustin-vulcanharborventures/30min" target="_blank">Book a meeting</Link>
                     </Button>
                   </>
                 }
